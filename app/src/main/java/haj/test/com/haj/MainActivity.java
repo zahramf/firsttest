@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //just for example
         load();
 
         final MediaPlayer mp = MediaPlayer.create(this, R.raw.labbaik);
