@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/main_matn_layout"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_top_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize">
+
+
+
+
+        <TextView
+            android:id="@+id/main_titr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Small Text"
+            android:layout_gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp"
+            android:layout_centerInParent="true" />
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight=".9"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/speaker_off"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btnSound" />
+
+            <TextView
+                android:id="@+id/main_context"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:gravity="right"
+                android:text="TextView" />
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:background="#FF0000"
+                android:layout_height="300dp"
+                android:id="@+id/imPagePic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_bottom_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:minHeight="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+            <Button
+                android:id="@+id/next_page"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="80dp"
+                android:background="@drawable/selector_right"
+                android:layout_height="40dp" />
+
+            <Button
+                android:id="@+id/pre_page"
+                android:layout_width="80dp"
+                android:background="@drawable/selector_left"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:id="@+id/page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

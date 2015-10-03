@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/setting_testtext"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:text="لا شك أنّ الحج ركن من أركان الإسلام،ووجوبه من ضروريات الدين، وهذا ما اتّفقت عليه كلمة المسلمين جميعاً."/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setting_testtext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp" >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/setting1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:text="الخط"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" >
+
+                <RadioButton
+                    android:id="@+id/setting_rb_abozar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الخط الأول" />
+
+
+                <RadioButton
+                    android:id="@+id/setting_rb_quran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" الخط الثاني" />
+
+                <RadioButton
+                    android:id="@+id/setting_zar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الخط الثالث" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/setting2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:text=" زیادة حجم الخط"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <SeekBar
+                android:id="@+id/setting_sb_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:max="40" />
+
+            <TextView
+                android:id="@+id/setting3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:text="الفاصلة البين الخطوط"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <SeekBar
+                android:id="@+id/setting_sb_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:max="10" />
+
+
+
+            <TextView
+                android:id="@+id/setting4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:text="خلفيّة الصفحة"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" >
+
+                <RadioButton
+                    android:id="@+id/setting_rb_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" بيضاء" />
+
+                <RadioButton
+                    android:id="@+id/setting_rb_night"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" سوداء" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/setting_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="save" />
+
+                <Button
+                    android:id="@+id/setting_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cancel" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

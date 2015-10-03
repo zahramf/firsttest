@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/action_bar_color" >
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btn_setting"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_alignBaseline="@+id/btn_search"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@+id/btn_search"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kabe"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent" >
+    </ListView>
+</LinearLayout>
+

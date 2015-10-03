@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Haj</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_primary">PrimaryActivity</string>
+    <string name="title_activity_context">ContextActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+</resources>

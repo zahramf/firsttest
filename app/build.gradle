@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    signingConfigs {
+        config {
+            keyAlias 'zahra'
+            keyPassword 'zahra6990'
+            storeFile file('D:/zahra.jks')
+            storePassword 'zahra6990'
+        }
+    }
+
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "haj.test.com.haj"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+}
