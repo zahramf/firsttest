@@ -10,7 +10,7 @@
         <activity
             android:name=".MainActivity"
             android:label="مناسك الحج" >
-           <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -20,12 +20,10 @@
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail" >
         </activity>
-
         <activity
             android:name=".PrimaryActivity"
             android:label="@string/title_activity_primary" >
         </activity>
-
         <activity
             android:name=".ContextActivity"
             android:label="@string/title_activity_context" >
@@ -37,7 +35,10 @@
         <activity
             android:name=".SearchActivity"
             android:label="@string/title_activity_search" >
-
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
         </activity>
     </application>
 

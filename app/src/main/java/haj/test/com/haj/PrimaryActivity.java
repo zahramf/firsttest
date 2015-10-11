@@ -18,7 +18,7 @@ import haj.test.com.haj.Models.subject;
 public class PrimaryActivity extends AppCompatActivity {
 
     public List<subject> sb;
-    public Button btnSetting,btnSearch;
+    public Button btnSetting,btnSearch,btnMenu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +71,7 @@ public class PrimaryActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(PrimaryActivity.this,SettingActivity.class);
+                Intent intent = new Intent(PrimaryActivity.this, SettingActivity.class);
                 startActivity(intent);
             }
         });
@@ -81,6 +81,16 @@ public class PrimaryActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =new  Intent(PrimaryActivity.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMenu = (Button)findViewById(R.id.btnMenu);
+        btnMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(PrimaryActivity.this,MenuActivity.class);
                 startActivity(intent);
             }
         });

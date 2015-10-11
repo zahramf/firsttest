@@ -36,11 +36,11 @@
 
                 />
 
-            <ImageView
-                android:id="@+id/imgIcon"
+            <Button
+                android:id="@+id/btnMenu"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/kabe"
+                android:background="@drawable/selector_menu"
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>

@@ -8,4 +8,5 @@
     <string name="title_activity_context">ContextActivity</string>
     <string name="title_activity_setting">SettingActivity</string>
     <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
 </resources>
